@@ -1,0 +1,78 @@
+
+
+// Event listeners to open and close the modal
+openReferenceBtn.addEventListener("click", openReference);
+closeBtn.addEventListener("click", closeReference);
+
+// Get the interest elements by their IDs
+const programming = document.getElementById("programming");
+const problemSolving = document.getElementById("problem-solving");
+const testing = document.getElementById("testing");
+
+// Add click event listeners to each interest
+programming.addEventListener("click", function() {
+    resetStyles();
+    programming.classList.add("programming-selected");
+});
+
+problemSolving.addEventListener("click", function() {
+    resetStyles();
+    problemSolving.classList.add("problem-solving-selected");
+});
+
+testing.addEventListener("click", function() {
+    resetStyles();
+    testing.classList.add("testing-selected");
+});
+function showAchievement(achievementId) {
+    // Get the achievement element by its ID
+    var achievement = document.getElementById(achievementId);
+    
+    // Display the achievement in an alert or a popup
+    if (achievement) {
+        alert(achievement.textContent);
+    }
+}
+
+
+// Reset the styles for all interests
+function resetStyles() {
+    programming.classList.remove("programming-selected");
+    problemSolving.classList.remove("problem-solving-selected");
+    testing.classList.remove("testing-selected");
+}
+
+
+function showMessage() {
+    alert("Hello! This is my portfolio website.");
+}
+
+// Get the button element
+const popupButton = document.getElementById("popupButton");
+
+// Add a click event listener to the button
+popupButton.addEventListener("click", showMessage);
+
+// JavaScript code for highlighting the "Contact Information" section
+
+// Get the "Contact Information" section by its id
+const contactInfoSection = document.getElementById("contact-info");
+
+// Add a mouseover event listener to change the background color
+contactInfoSection.addEventListener("mouseover", function () {
+    contactInfoSection.style.backgroundColor = "#007BFF";
+    contactInfoSection.style.color = "#fff";
+});
+
+// Add a mouseout event listener to reset the background color
+contactInfoSection.addEventListener("mouseout", function () {
+    contactInfoSection.style.backgroundColor = "transparent";
+    contactInfoSection.style.color = "initial";
+});
+// JavaScript to toggle the "open" class
+const educationSection = document.querySelector('.education');
+const educationHeading = document.querySelector('.education h2');
+
+educationHeading.addEventListener('click', function() {
+    educationSection.classList.toggle('open');
+});

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vaideeshwari M - Portfolio</title>
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <style>
+    header {
+        background-color: #007BFF;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+    }
+ /* Style the reference section */
+.reference {
+    background-color: #f7f7f7; /* Background color */
+    border: 1px solid #ddd; /* Border */
+    padding: 20px; /* Padding around the section */
+    margin: 20px; /* Margin to provide spacing from other sections */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Style the reference heading */
+.reference h2 {
+    font-size: 24px; /* Heading font size */
+    color: #007BFF; /* Heading text color */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+/* Style the reference details */
+.reference p {
+    font-size: 16px; /* Text font size */
+    margin: 10px 0; /* Space between reference details */
+}
+
+/* Style email links */
+.reference a {
+    color: #007BFF; /* Link text color */
+    text-decoration: none; /* Remove underlines from links */
+}
+
+/* Add a hover effect to email links */
+.reference a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+ /* Style the interests section with different formats */
+/* Style the interests section */
+.interests {
+    background-color: #f7f7f7; /* Background color */
+    border: 1px solid #ddd; /* Border */
+    padding: 20px; /* Padding around the section */
+    margin: 20px; /* Margin to provide spacing from other sections */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Style the interests heading */
+.interests h2 {
+    font-size: 24px; /* Heading font size */
+    color: #007BFF; /* Heading text color */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+/* Style individual interest items */
+.interests ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove list padding */
+}
+
+/* Style each interest differently */
+.interests li {
+    margin: 10px 0; /* Space between interest items */
+    line-height: 1.6; /* Adjust the line height for readability */
+}
+
+/* Style Programming interest */
+#programming {
+    color: #007BFF; /* Blue color for Programming */
+    font-weight: bold; /* Bold text */
+}
+
+/* Style Problem Solving interest */
+#problem-solving {
+    color: #FF5733; /* Orange color for Problem Solving */
+    font-style: italic; /* Italic text */
+}
+
+/* Style Testing interest */
+#testing {
+    color: #33FF57; /* Green color for Testing */
+    text-transform: uppercase; /* Uppercase text */
+}
+
+/* Add a hover effect to each interest */
+.interests li:hover {
+    background-color: #e1e1e1; /* Background color on hover */
+    color: #000; /* Text color on hover */
+}
+
+
+
+
+    /* Style the achievements section */
+    /* Style the "Last Achievements" button */
+.achievements-button {
+    background-color: #768f91; /* Background color */
+    color: rgb(89, 14, 14); /* Text color */
+    padding: 10px 20px; /* Padding around the button */
+    border: 10px; /* Remove the button border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    font-size: 20px; /* Font size */
+    text-align: center; /* Center-align the text */
+    display: block; /* Make it a block-level element */
+    margin: 20px auto; /* Center the button horizontally with margin */
+    text-decoration: none; /* Remove underlines from links */
+}
+
+/* Add a hover effect */
+.achievements-button:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+}
+
+.achievements {
+    background-color: #f9f9f9; /* Background color */
+    border: 1px solid #ddd; /* Border */
+    padding: 20px; /* Padding around the section */
+    margin: 20px; /* Margin to provide spacing from other sections */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Style the achievements heading */
+.achievements h2 {
+    font-size: 24px; /* Heading font size */
+    color: #007BFF; /* Heading text color */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+/* Style the achievements list */
+.achievements ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove list padding */
+}
+
+/* Style individual achievement items */
+.achievements li {
+    margin: 10px 0; /* Space between achievement items */
+    position: relative;
+    line-height: 1.6; /* Adjust the line height for readability */
+    padding-left: 30px; /* Add space for the marker/icon */
+}
+
+/* Add a custom marker/icon before each achievement */
+.achievements li::before {
+    content: "\1F3C6"; /* Unicode trophy character as a marker */
+    font-size: 18px; /* Adjust the size of the marker/icon */
+    color: #007BFF; /* Color of the marker/icon */
+    position: absolute;
+    left: 0; /* Position it to the left of the achievement text */
+}
+
+/* Add a hover effect to the heading */
+.achievements h2:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+    /* Style the education section with sliding effect */
+ /* Style the skills section with a different format */
+.skills {
+    background-color: #f9f9f9; /* Background color */
+    border: 1px solid #ddd; /* Border */
+    padding: 20px; /* Padding around the section */
+    margin: 20px; /* Margin to provide spacing from other sections */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Style the skills heading */
+.skills h2 {
+    font-size: 24px; /* Heading font size */
+    color: #007BFF; /* Heading text color */
+}
+
+/* Style the skills list */
+.skills ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove list padding */
+}
+
+/* Style individual skill items */
+.skills li {
+    margin: 10px 0; /* Space between skill items */
+    position: relative;
+}
+
+/* Add a unique icon for each skill item */
+.skills li::before {
+    content: "\1F60D"; /* Unicode smiley emoji as a marker for skills */
+    font-size: 24px; /* Adjust the size of the emoji */
+    color: #007BFF; /* Color of the emoji */
+    margin-right: 10px; /* Space between emoji and skill text */
+}
+
+/* Add a hover effect to the heading */
+.skills h2:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+/* Style the education section with a different format */
+.education {
+    background-color: #007BFF; /* Background color */
+    color: #fff; /* Text color */
+    padding: 20px; /* Padding around the section */
+    margin: 20px; /* Margin to provide spacing from other sections */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Style the education heading with a unique font and size */
+.education h2 {
+    font-size: 32px; /* Larger font size for the heading */
+    font-family: 'Cursive', cursive; /* Unique font style */
+}
+
+/* Style the education list items with custom bullet points */
+.education ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove list padding */
+}
+
+/* Style the education list item text with custom marker */
+.education li {
+    margin: 10px 0; /* Space between list items */
+    position: relative;
+    line-height: 1.6; /* Adjust the line height for readability */
+}
+
+/* Custom marker for list items */
+.education li:before {
+    content: "\1F4D6"; /* Unicode graduation cap character */
+    font-size: 24px; /* Adjust the size of the graduation cap */
+    color: #f9f9f9; /* Marker color */
+    margin-right: 10px; /* Space between marker and text */
+}
+
+/* Add a hover effect to the heading */
+.education h2:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+    /* Style the objective section for a grand look */
+.objective {
+    background-color: #007BFF; /* Background color */
+    color: #fff; /* Text color */
+    padding: 20px; /* Padding around the section */
+    margin: 20px; /* Margin to provide spacing from other sections */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center-align the text */
+}
+
+/* Style the objective heading for emphasis */
+.objective h2 {
+    font-size: 36px; /* Large font size for the heading */
+    font-weight: bold; /* Bold text */
+}
+
+/* Style the objective text for emphasis */
+.objective p {
+    font-size: 18px; /* Larger font size for the text */
+    font-weight: bold; /* Bold text */
+}
+
+/* Add a hover effect to change the background color */
+.objective:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+}
+
+    
+    /* Style the contact information section */
+#contact-info {
+    background-color: #f2f2f2; /* Background color */
+    border: 1px solid #ddd; /* Border */
+    padding: 20px; /* Padding around the section */
+    margin: 20px; /* Margin to provide spacing from other sections */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Style the contact information heading */
+#contact-info h2 {
+    font-size: 24px; /* Heading font size */
+    color: #00fff2; /* Heading text color */
+}
+
+/* Style the contact information address */
+#contact-info address {
+    font-style: italic; /* Italicize the address */
+    margin-bottom: 10px; /* Space below the address */
+}
+
+/* Style the contact information phone and email */
+#contact-info p {
+    font-weight: bold; /* Make text bold */
+    margin: 5px 0; /* Space around phone and email */
+}
+
+/* Add a hover effect */
+#contact-info:hover {
+    background-color: #999369; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+    /* Style the contact information section */
+    .contact-info {
+        margin: 20px;
+    }
+    
+    /* Style the objective section */
+    .objective {
+        margin: 20px;
+    }
+    
+    /* Style the education section */
+    .education {
+        margin: 20px;
+    }
+    
+    /* Style the button */
+    #popupButton {
+        background-color: #007BFF;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Your HTML code here -->
+<script src="script.js"></script>
+
+
+<!-- <button id="popupButton">Show Pop-up</button> -->
+
+        <h1>Vaideeshwari M</h1>
+        <!-- <p>Web Developer</p> -->
+    </header>
+    <!-- <section class="contact-info">
+        <h2>Contact Information</h2>
+        <address>
+            33, Sri Vidhya Nagar, 3rd Street, Gandhi Nagar Post,<br>College Road Back Side, Tiruppur 641603
+        </address>
+        <p>Phone: 9843578033</p>
+        <p>Email: vaideeshwari0801@gmail.com</p>
+    </section> -->
+    <section class="contact-info" id="contact-info">
+        <h2>Contact Information</h2>
+        <address>
+            33, Sri Vidhya Nagar, 3rd Street, Gandhi Nagar Post,<br>College Road Back Side, Tiruppur 641603
+        </address>
+        <p>Phone: 9843578033</p>
+        <p>Email: vaideeshwari0801@gmail.com</p>
+    </section>
+    
+    <section class="objective">
+        <h2>Objective</h2>
+        <p>I am looking for a challenging job with a rapidly growing organization that can provide me with a range of goals and job objectives within a contemporary and economical business setting.</p>
+    </section>
+    <section class="education">
+        <h2>Education</h2>
+        <ul>
+            <li>Avp College of Arts and Science - BSC IT - 80%</li>
+            <li>Jaivabai Modern Girls HR Secondary School - HSC - 68%</li>
+            <li>Jaivabai Modern Girls HR Secondary School - SSLC - 51%</li>
+        </ul>
+    </section>
+    <!-- You can add more sections for skills, achievements, interests, etc. -->
+    <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>Web Technology:</strong> HTML, CSS</li>
+            <li><strong>Microsoft Package:</strong> Word, PowerPoint, Excel, Access</li>
+            <li><strong>Design Tools:</strong> Adobe Photoshop</li>
+            <li><strong>Additional Skills:</strong> Quick learner, Self-motivated, Active listening, Teamwork</li>
+        </ul>
+    </section>
+    <section class="achievements">
+        <h2>Achievements & Awards</h2>
+        <ul>
+            <li id="achievement1">Won second prize in judo District level competition at Thamari Metriculation HR Secondary School, Erode</li>
+            <li id="achievement2">Won second prize in a state-level competition in Karur</li>
+            <li id="achievement3">Received an e-certificate for an online quiz event by Yavarum Kelir</li>
+            <li id="achievement4">Completed a certificate course in DGA (Digital Graphics Animation) at AVP College of Arts and Science</li>
+            <li id="achievement5">Completed a certificate course in DCFA (Diploma in Computer Financial Accounting) at CSS</li>
+        </ul>
+    </section>
+    
+    <!-- Add links to display individual achievements -->
+    <div>
+        <!-- <a href="last_achievements.html" class="achievements-button">Last Achievements</a> -->
+
+        <a href="javascript:void(0);" class="achievements-button" onclick="showAchievement('achievement1')">Achievement 1</a>
+        <a href="javascript:void(0);" class="achievements-button" onclick="showAchievement('achievement2')">Achievement 2</a>
+        <a href="javascript:void(0);" class="achievements-button" onclick="showAchievement('achievement3')">Achievement 3</a>
+        <a href="javascript:void(0);" class="achievements-button" onclick="showAchievement('achievement4')">Achievement 4</a>
+        <a href="javascript:void(0);" class="achievements-button" onclick="showAchievement('achievement5')">Achievement 5</a>
+    </div>
+   
+   
+        <section class="interests">
+            <h2>Interests</h2>
+            <ul>
+                <li id="programming">Programming</li>
+                <li id="problem-solving">Problem Solving</li>
+                <li id="testing">Testing</li>
+            </ul>
+       
+        
+       
+    
+    
+   
+    
+    
+    
+    <footer>
+        <!-- <p>References available upon request</p> -->
+        <section class="reference">
+            <h2>Reference</h2>
+            <p>
+                C. Durgadevi<br>
+                Professor<br>
+                AVP College of Arts and Science<br>
+                Email: <a href="mailto:durganewworld@gmail.com">durganewworld@gmail.com</a><br>
+                Phone: 6374351445
+            </p>
+        </section>
+        
+    </footer>
+</body>
+</html>
